@@ -4,6 +4,7 @@
 -- See the kickstart.nvim README for more information
 return {
   'tpope/vim-fugitive',
+  'pearofducks/ansible-vim',
   {
     'christoomey/vim-tmux-navigator',
     lazy = false,
