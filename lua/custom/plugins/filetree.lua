@@ -1,1 +1,0 @@
-/Users/jsilva/dotfiles/nvim-plugins/filetree.lua

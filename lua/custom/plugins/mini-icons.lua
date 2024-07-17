@@ -1,0 +1,1 @@
+/Users/jsilva/dotfiles/nvim-plugins/mini-icons.lua
