@@ -98,6 +98,15 @@ vim.g.have_nerd_font = false
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
+-- adding my own options JFS
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldlevelstart = 1
+vim.opt.foldcolumn = '0'
+vim.opt.foldenable = false
+-- vim.opt.foldnestmax = 4
+-- vim.opt.foldtext = ''
+
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
