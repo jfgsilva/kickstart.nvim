@@ -105,6 +105,11 @@ vim.opt.foldlevelstart = 1
 vim.opt.foldcolumn = '0'
 vim.opt.foldenable = false
 vim.opt.tabstop = 4
+-- the following line allows for expansion of %% to base dir from current file
+vim.cmd [[
+  cnoremap <expr> %% getcmdtype()==':'?expand('%:h').'/':'%%'
+]]
+
 -- vim.opt.foldnestmax = 4
 -- vim.opt.foldtext = ''
 
