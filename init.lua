@@ -91,27 +91,12 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
-
--- adding my own options JFS
-vim.opt.foldmethod = 'expr'
-vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-vim.opt.foldlevelstart = 1
-vim.opt.foldcolumn = '0'
-vim.opt.foldenable = false
-vim.opt.tabstop = 4
--- the following line allows for expansion of %% to base dir from current file
-vim.cmd [[
-  cnoremap <expr> %% getcmdtype()==':'?expand('%:h').'/':'%%'
-]]
-
--- vim.opt.foldnestmax = 4
--- vim.opt.foldtext = ''
 
 -- Make line numbers default
 vim.opt.number = true
